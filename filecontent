@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Enter the filename"
+read file
+
+c=` cat $file | wc -c `
+w=` cat $file | wc -w `
+l=` cat $file | wc -l`
+
+echo "No of characters in $file : $((c))"
+echo "No of words in $file : $((w))"
+echo "No of Lines in $file :  $((l))"
